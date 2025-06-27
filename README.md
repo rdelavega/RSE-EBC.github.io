@@ -2,7 +2,7 @@
 
 >## Guia
 > Hola equipo! Este es el repo del proyecto.  
-> 🔗 [https://github.com/rdelavega/rdelavega.github.io](https://github.com/rdelavega/rdelavega.github.io)
+> 🔗 [https://github.com/rdelavega/RSE-EBC.github.io](https://github.com/rdelavega/RSE-EBC.github.io)
 >
 >
 > ### Clonar el repositorio
