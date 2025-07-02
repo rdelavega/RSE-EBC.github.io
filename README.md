@@ -8,7 +8,7 @@
 > ### Clonar el repositorio
 >
 > Para empezar a trabajar, clona el repositorio en tu computadora:
-> git clone https://github.com/tu_usuario/tu_repositorio.git
+> git clone https://github.com/tu_usuario/RSE-EBC.github.io
 > cd tu_repositorio
 >  
 > 
