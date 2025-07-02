@@ -1,69 +1,68 @@
-/* Reset básico */
+/* ============================================
+   Paleta de colores de referencia
+   ============================================ */
+/*
+  Crema base:        #F5F1EA
+  Naranja terracota: #D96C4D
+  Azul grisáceo:     #6C92AF
+  Beige claro:       #DAD3C3
+  Gris oscuro:       #474747
+*/
+
+/* ============================================
+   Reset básico
+   ============================================ */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* ============================================
+   Estilos globales
+   ============================================ */
 body {
+  background-color: #f5f1ea; /* fondo base */
+  color: #474747; /* texto por defecto */
   font-family: "Segoe UI", sans-serif;
-  background: linear-gradient(to right, #f7f9fc, #ffffff);
-  color: #333;
-  padding: 2rem;
-  text-align: center;
+  line-height: 1.6;
+  padding: 1rem;
 }
 
-/* Contenedor principal */
-.container {
-  max-width: 600px;
-  margin: auto;
+/* ============================================
+   Header / Navbar
+   ============================================ */
+header {
+  /* background, layout, etc. */
 }
 
-/* Título */
-h1 {
-  font-size: 2.5rem;
-  color: #2c3e50;
-  margin-bottom: 1rem;
+/* ============================================
+   Main (contenido general)
+   ============================================ */
+main {
+  /* Pueden usar Grid o Flex para distribuir secciones */
 }
 
-/* Párrafo introductorio */
-p {
-  font-size: 1.2rem;
+/* ============================================
+   Secciones individuales
+   ============================================ */
+section {
+  padding: 2rem 1rem;
   margin-bottom: 2rem;
-  color: #555;
+  /* fondo, bordes, etc */
 }
 
-/* Sección del equipo */
-.team-section {
-  margin-bottom: 2rem;
-}
-
-.team-section h2 {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-  color: #34495e;
-}
-
-.team-list {
-  list-style: none;
-  font-size: 1.1rem;
-  line-height: 2;
-  padding-left: 0;
-}
-
-/* Botón */
+/* ============================================
+   Elementos reutilizables
+   ============================================ */
 button {
-  background-color: #3498db;
-  color: white;
+  /* Estilos mínimos, para que cada quien los personalice */
   border: none;
-  padding: 0.75rem 1.5rem;
-  font-size: 1rem;
-  border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-button:hover {
-  background-color: #2980b9;
-  transform: scale(1.05);
+/* ============================================
+   Footer
+   ============================================ */
+footer {
 }
