@@ -65,104 +65,136 @@ button {
    Footer
    ============================================ */
 footer {
-   .footer {
-      background-color: #e6e6e6;
-      padding: 40px 20px;
-      font-size: 14px;
-      color: #333;
-    }
-    
+  .footer {
+    background-color: #e6e6e6;
+    color: #333;
+    padding: 40px 20px 0;
+    font-size: 14px;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1200px;
+    margin: auto;
+    padding-bottom: 30px;
+  }
+  
+  .footer-section {
+    flex: 1 1 220px;
+    min-width: 220px;
+  }
+  
+  .footer-title {
+    font-size: 18px;
+    color: #a44e27;
+    margin-bottom: 15px;
+  }
+  
+  .footer-subtitle {
+    color: #a44e27;
+    margin-bottom: 15px;
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-links li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-links a,
+  .footer a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .footer-links a:hover,
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  
+  .subscribe-form {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .subscribe-form input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .subscribe-form button {
+    background-color: #d2693c;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .subscribe-form button:hover {
+    background-color: #a44e27;
+  }
+  
+  .social-icons {
+    margin-top: 15px;
+  }
+  
+  .social-icons a {
+    margin-right: 12px;
+    font-size: 18px;
+    color: #a44e27;
+  }
+  
+  .footer-bottom {
+    border-top: 1px solid #ccc;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 12px;
+  }
+  
+  .footer-bottom p {
+    margin-bottom: 10px;
+  }
+  
+  .payment-icons {
+    margin-top: 8px;
+  }
+  
+  .payment-icons i {
+    font-size: 22px;
+    margin-left: 10px;
+    color: #555;
+  }  
+  
+  /* Responsive */
+  @media (max-width: 768px) {
     .footer-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 40px;
-      max-width: 1200px;
-      margin: auto;
+      flex-direction: column;
+      align-items: flex-start;
     }
-    
-    .footer-section h3,
-    .footer-section h4 {
-      color: #a44e27;
-      margin-bottom: 15px;
-    }
-    
-    .footer-section p,
-    .footer-section ul {
-      margin-bottom: 10px;
-    }
-    
-    .footer-section ul {
-      list-style: none;
-      padding: 0;
-    }
-    
-    .footer-section ul li {
-      margin-bottom: 8px;
-    }
-    
-    .footer-section ul li a {
-      color: #333;
-      text-decoration: none;
-    }
-    
-    .footer-section ul li a:hover {
-      text-decoration: underline;
-    }
-    
+  
     .subscribe-form {
-      display: flex;
-      gap: 10px;
-      margin-top: 10px;
+      flex-direction: column;
+      gap: 8px;
     }
-    
-    .subscribe-form input {
-      flex: 1;
-      padding: 8px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-    
+  
+    .subscribe-form input,
     .subscribe-form button {
-      background-color: #d2693c;
-      color: white;
-      border: none;
-      padding: 8px 14px;
-      border-radius: 4px;
-      cursor: pointer;
+      width: 100%;
     }
-    
-    .subscribe-form button:hover {
-      background-color: #a44e27;
-    }
-    
-    .social-icons a {
-      margin-right: 10px;
-      color: #a44e27;
-      font-size: 18px;
-      text-decoration: none;
-    }
-    
+  
     .footer-bottom {
-      border-top: 1px solid #ccc;
-      margin-top: 30px;
-      padding-top: 20px;
       text-align: center;
-      font-size: 12px;
     }
-    
-    .footer-bottom a {
-      color: #555;
-      text-decoration: none;
-      margin: 0 5px;
-    }
-    
-    .footer-bottom a:hover {
-      text-decoration: underline;
-    }
-    
-    .payment-icons i {
-      font-size: 24px;
-      margin-left: 10px;
-      color: #555;
-    }     
+  }  
 }
