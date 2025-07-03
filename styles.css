@@ -145,16 +145,6 @@ footer {
     background-color: #a44e27;
   }
   
-  .social-icons {
-    margin-top: 15px;
-  }
-  
-  .social-icons a {
-    margin-right: 12px;
-    font-size: 18px;
-    color: #a44e27;
-  }
-  
   .footer-bottom {
     border-top: 1px solid #ccc;
     text-align: center;
@@ -166,15 +156,20 @@ footer {
     margin-bottom: 10px;
   }
   
-  .payment-icons {
-    margin-top: 8px;
-  }
-  
-  .payment-icons i {
-    font-size: 22px;
-    margin-left: 10px;
-    color: #555;
-  }  
+  .social-icons svg,
+.payment-icons svg {
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+  fill: #a44e27;
+  transition: transform 0.2s ease;
+}
+
+.social-icons svg:hover,
+.payment-icons svg:hover {
+  transform: scale(1.1);
+  fill: #d2693c;
+}
   
   /* Responsive */
   @media (max-width: 768px) {
