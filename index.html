@@ -12,26 +12,102 @@
       <!-- Aquí va el logo y el menú de navegación -->
     </header>
 
-    <!-- ========== CONTENIDO PRINCIPAL ========== -->
-    <main>
+    <main class="page">
       <!-- ========== HERO SECTION ========== -->
-      <section id="hero">
-        <!-- Imagen, título, subtítulo y botón CTA -->
+      <section class="hero">
+        <div class="hero-overlay">
+          <div class="hero-content">
+            <h1 class="hero-title">Nomadogs</h1>
+            <p class="hero-subtitle">
+              Descubre el toque artesanal que tu mascota merece...
+            </p>
+            <button class="btn-primary">Descubre nuestros collares</button>
+          </div>
+        </div>
       </section>
 
-      <!-- ========== PRODUCTOS DESTACADOS ========== -->
-      <section id="productos">
-        <!-- Tarjetas con imagen, nombre, precio y botón -->
+      <!-- ========== FEATURES ========== -->
+      <section class="features">
+        <h2 class="section-title" id="feature-title">
+          Conoce nuestra colección
+        </h2>
+        <div class="features-grid">
+          <article class="card">
+            <h3 class="card-title">Diseños Únicos</h3>
+            <p class="card-text">
+              Cada collar es una pieza única, tejida a mano con patrones
+              tradicionales que reflejan la rica cultura artesanal mexicana.
+            </p>
+          </article>
+          <article class="card">
+            <h3 class="card-title">Calidad Premium</h3>
+            <p class="card-text">
+              Utilizamos materiales de la más alta calidad, resistentes al agua
+              y al desgaste, garantizando durabilidad y comodidad.
+            </p>
+          </article>
+          <article class="card">
+            <h3 class="card-title">Personalización</h3>
+            <p class="card-text">
+              Adaptamos cada collar al tamaño y personalidad de tu mascota.
+              Colores, tallas y diseños completamente personalizables.
+            </p>
+          </article>
+        </div>
       </section>
 
-      <!-- ========== ACERCA DE ========== -->
-      <section id="about">
-        <!-- Acerda de, texto, etc -->
+      <!-- ========== ABOUT ========== -->
+      <section class="about">
+        <h2 class="section-title" id="about-title">
+          Más que un collar, una obra de arte que cuenta una historia.
+        </h2>
+        <div class="about-reasons">
+          <div class="reason-card">
+            <h3 class="reason-title">Materiales y durabilidad</h3>
+            <p>
+              Seleccionamos cuidadosamente hilos de algodón premium y accesorios
+              de metal inoxidable que garantizan resistencia y durabilidad en
+              cada collar tejido a mano. Cada pieza pasa por rigurosos controles
+              de calidad.
+            </p>
+          </div>
+          <div class="reason-card">
+            <h3 class="reason-title">Comodidad para tu mascota</h3>
+            <p>
+              Diseñados ergonómicamente pensando en la comodidad y bienestar de
+              tu mejor amigo. Bordes suaves, peso equilibrado y ajuste perfecto
+              para que tu mascota se sienta cómoda todo el día.
+            </p>
+          </div>
+          <div class="reason-card">
+            <h3 class="reason-title">Diseño auténtico</h3>
+            <p>
+              Cada pieza refleja tradición ancestral, cultura viva y estilo
+              único. Patrones inspirados en textiles tradicionales mexicanos que
+              hacen de cada collar una obra de arte portable.
+            </p>
+          </div>
+        </div>
       </section>
 
-      <!-- ========== CONTACTO ========== -->
-      <section id="contacto">
-        <!-- Formulario simple con nombre, correo, mensaje -->
+      <!-- ========== CATALOGUE / CONTACT FORM ========== -->
+      <section class="contact">
+        <h2 class="section-title">Consulta el Catálogo</h2>
+        <p class="contact-tagline">
+          Déjanos tus datos y te enviaremos nuestro catálogo completo con
+          precios especiales
+        </p>
+        <form class="contact-form">
+          <input type="text" placeholder="Nombre completo *" required />
+          <input type="email" placeholder="Correo electrónico *" required />
+          <input type="tel" placeholder="Teléfono (opcional)" />
+          <textarea
+            placeholder="Cuéntanos sobre tu mascota: raza, tamaño, colores favoritos..."
+            rows="4"
+            required
+          ></textarea>
+          <button type="submit" class="btn-primary">Enviar solicitud</button>
+        </form>
       </section>
     </main>
 
