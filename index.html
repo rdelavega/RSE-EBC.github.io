@@ -10,20 +10,31 @@
   </head>
   <body>
     <!-- ========== NAVBAR ========== -->
-    <header>
-      <img class="logo" src="img/logo.png" alt="Logo empresa">
-      <nav>
-        <ul class="navlinks">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Catálogo</a></li>
-          <li><a href="#">Nosotros</a></li>
-          
-          
-        </ul>
-      </nav> 
-      <a class="boton" href="#"><button>Contacto</button></a>º
-       
-    </header>
+
+    <nav class="navbar">
+      <div class="logo">
+        <img src="img/logo.png" alt="Logo nomadogs">
+
+      </div>
+  
+      <!-- Toggle para menú móvil -->
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+  
+      <!-- Enlaces -->
+      <ul class="nav-links">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="#">Nosotros</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+  
+      <!-- Barra de búsqueda -->
+      <form class="search-bar" action="#" method="GET">
+        <input type="text" placeholder="Buscar...">
+        <button type="submit">🔍</button>
+      </form>
+    </nav>
 
     <main class="page">
       <!-- ========== HERO SECTION ========== -->
