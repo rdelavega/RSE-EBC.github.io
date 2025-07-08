@@ -36,12 +36,12 @@ body {
 
 
    .navbar {
-    background-color: #333;
+    background-color: #D96C4D;
     color: white;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
     padding: 10px 20px;
     position: relative;
   }
@@ -50,6 +50,7 @@ body {
     height: 50px;
     width: auto;
     padding-top: 10px;
+  
     
   }
   
@@ -59,7 +60,7 @@ body {
     display: flex;
     gap: 20px;
     margin: 0;
-    padding: 0;
+    
   }
   
   .nav-links li a {
@@ -69,7 +70,7 @@ body {
   }
   
   .nav-links li a:hover {
-    color: #ffcc00;
+    color: #4dbad9;
   }
   
   /* Toggle y menú ícono */
@@ -89,20 +90,21 @@ body {
     display: flex;
     align-items: center;
     gap: 5px;
+    
   }
   
   .search-bar input {
     padding: 5px 10px;
-    border-radius: 4px;
+    border-radius: 6px;
     border: none;
   }
   
   .search-bar button {
     padding: 5px 10px;
-    background-color: #555;
+    background-color: #4dbad9;
     color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 10px;
     cursor: pointer;
   }
   
