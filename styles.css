@@ -30,20 +30,30 @@ body {
   min-height: 100vh;
 }
 
+
 /* ============================================
    Header / Navbar
    ============================================ */
-
+   header {
+    margin: -1rem;
+  
+  }
 
    .navbar {
     background-color: #D96C4D;
     color: white;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-wrap: nowrap;
     padding: 10px 20px;
     position: relative;
+   
+  }
+
+  .navbar-center .navbar-right{
+    display: flex;
+    align-items: center;
   }
   
   .logo img {

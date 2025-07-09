@@ -13,29 +13,41 @@
     <header>
     <nav class="navbar">
       <div class="logo">
-        <img src="img/logo.png" alt="Logo nomadogs">
+      <a href="#">
+        <img src="public/logo.png" alt="Logo nomadogs" >
+      </a>
+
 
       </div>
   
-      <!-- Toggle para menú móvil -->
-      <input type="checkbox" id="menu-toggle" class="menu-toggle">
-      <label for="menu-toggle" class="menu-icon">&#9776;</label>
-  
       <!-- Enlaces -->
+    <div class="navbar-center">   
       <ul class="nav-links">
         <li><a href="#">Inicio</a></li>
         <li><a href="#">Catálogo</a></li>
         <li><a href="#">Nosotros</a></li>
         <li><a href="#">Contacto</a></li>
       </ul>
+    </div>  
   
       <!-- Barra de búsqueda -->
+
+    <div class="navbar-right">  
       <form class="search-bar" action="#" method="GET">
         <input type="text" placeholder="Buscar...">
-        <button type="submit">Enviar</button>
+        <button type="submit">Buscar</button>
       </form>
+    </div>  
+
+      <!-- Toggle para menú móvil -->
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+
+
     </nav>
     </header>
+    
     <main class="page">
       <!-- ========== HERO SECTION ========== -->
       <section class="hero">
