@@ -5,22 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="styles.css" rel="stylesheet" />
     <title>Página del Equipo</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
   </head>
   <body>
     <!-- ========== NAVBAR ========== -->
 
     <nav class="navbar">
       <div class="logo">
-        <img src="img/logo.png" alt="Logo nomadogs">
-
+        <img src="/public/logo.png" alt="Logo nomadogs" />
       </div>
-  
+
       <!-- Toggle para menú móvil -->
-      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
       <label for="menu-toggle" class="menu-icon">&#9776;</label>
-  
+
       <!-- Enlaces -->
       <ul class="nav-links">
         <li><a href="#">Inicio</a></li>
@@ -28,13 +33,24 @@
         <li><a href="#">Nosotros</a></li>
         <li><a href="#">Contacto</a></li>
       </ul>
-  
-      <!-- Barra de búsqueda -->
-      <form class="search-bar" action="#" method="GET">
-        <input type="text" placeholder="Buscar...">
-        <button type="submit">🔍</button>
-      </form>
-    </nav>
+
+    <!-- Barra de búsqueda -->
+<div class="search-bar">
+  <form class="form">
+    <button>
+      <svg width="17" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="search">
+        <path d="M7.667 12.667A5.333 5.333 0 107.667 2a5.333 5.333 0 000 10.667zM14.334 14l-2.9-2.9" stroke="currentColor" stroke-width="1.333" stroke-linecap="round" stroke-linejoin="round"></path>
+      </svg>
+    </button>
+    <input class="input" placeholder="Busca un producto" required="" type="text">
+    <button class="reset" type="reset">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+      </svg>
+    </button>
+  </form>
+</div>
+
 
     <main class="page">
       <!-- ========== HERO SECTION ========== -->
@@ -138,18 +154,17 @@
     <!-- ========== FOOTER ========== -->
     <footer class="footer">
       <div class="footer-container">
-    
         <!-- Marca / Información de contacto -->
         <div class="footer-section">
           <h3 class="footer-title">Collares Artesanales Online</h3>
           <p>Collares artesanales de alta calidad para tu mejor amigo.</p>
           <p>
-            Calle Artesanal 123<br>
-            Madrid, España<br>
+            Calle Artesanal 123<br />
+            Madrid, España<br />
             +34 912 345 678
           </p>
         </div>
-    
+
         <!-- Enlaces Rápidos -->
         <div class="footer-section">
           <h4 class="footer-subtitle">Enlaces Rápidos</h4>
@@ -162,7 +177,7 @@
             <li><a href="#">Contacto</a></li>
           </ul>
         </div>
-    
+
         <!-- Categorías -->
         <div class="footer-section">
           <h4 class="footer-subtitle">Categorías</h4>
@@ -172,44 +187,93 @@
             <li><a href="#">Decorativos</a></li>
           </ul>
         </div>
-    
+
         <!-- Suscripción + Redes -->
         <div class="footer-section">
           <h4 class="footer-subtitle">Mantente Conectado</h4>
           <p>Suscríbete para recibir noticias y ofertas especiales</p>
           <form class="subscribe-form">
-            <input type="email" placeholder="Tu email" required>
+            <input type="email" placeholder="Tu email" required />
             <button type="submit">Enviar</button>
           </form>
           <div class="social-icons">
             <a href="#" aria-label="Facebook">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#a44e27" viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.5 9.87v-6.99H8.08V12h2.42v-1.53c0-2.4 1.43-3.73 3.62-3.73 1.05 0 2.14.19 2.14.19v2.35h-1.21c-1.19 0-1.56.74-1.56 1.5V12h2.65l-.42 2.88h-2.23v6.99A10 10 0 0 0 22 12z"/></svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="#a44e27"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M22 12a10 10 0 1 0-11.5 9.87v-6.99H8.08V12h2.42v-1.53c0-2.4 1.43-3.73 3.62-3.73 1.05 0 2.14.19 2.14.19v2.35h-1.21c-1.19 0-1.56.74-1.56 1.5V12h2.65l-.42 2.88h-2.23v6.99A10 10 0 0 0 22 12z"
+                />
+              </svg>
             </a>
             <a href="#" aria-label="Instagram">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#a44e27" viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.584.012 4.85.07 1.366.062 2.633.337 3.608 1.312.975.975 1.25 2.242 1.312 3.608.058 1.266.07 1.65.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.337 2.633-1.312 3.608-.975.975-2.242 1.25-3.608 1.312-1.266.058-1.65.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.337-3.608-1.312-.975-.975-1.25-2.242-1.312-3.608C2.212 15.584 2.2 15.2 2.2 12s.012-3.584.07-4.85c.062-1.366.337-2.633 1.312-3.608.975-.975 2.242-1.25 3.608-1.312C8.416 2.212 8.8 2.2 12 2.2zM12 0C8.735 0 8.332.012 7.052.07 5.725.128 4.515.37 3.45 1.435 2.385 2.5 2.143 3.71 2.085 5.038 2.027 6.318 2.015 6.721 2.015 10c0 3.279.012 3.682.07 4.962.058 1.328.3 2.538 1.365 3.603 1.065 1.065 2.275 1.307 3.603 1.365 1.28.058 1.683.07 4.962.07s3.682-.012 4.962-.07c1.328-.058 2.538-.3 3.603-1.365 1.065-1.065 1.307-2.275 1.365-3.603.058-1.28.07-1.683.07-4.962s-.012-3.682-.07-4.962c-.058-1.328-.3-2.538-1.365-3.603C19.485.37 18.275.128 16.948.07 15.668.012 15.265 0 12 0zm0 5.8a6.2 6.2 0 1 0 0 12.4A6.2 6.2 0 0 0 12 5.8zm0 10.2a4 4 0 1 1 0-8.001 4 4 0 0 1 0 8zm6.4-11.2a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z"/></svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="#a44e27"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 2.2c3.2 0 3.584.012 4.85.07 1.366.062 2.633.337 3.608 1.312.975.975 1.25 2.242 1.312 3.608.058 1.266.07 1.65.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.337 2.633-1.312 3.608-.975.975-2.242 1.25-3.608 1.312-1.266.058-1.65.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.337-3.608-1.312-.975-.975-1.25-2.242-1.312-3.608C2.212 15.584 2.2 15.2 2.2 12s.012-3.584.07-4.85c.062-1.366.337-2.633 1.312-3.608.975-.975 2.242-1.25 3.608-1.312C8.416 2.212 8.8 2.2 12 2.2zM12 0C8.735 0 8.332.012 7.052.07 5.725.128 4.515.37 3.45 1.435 2.385 2.5 2.143 3.71 2.085 5.038 2.027 6.318 2.015 6.721 2.015 10c0 3.279.012 3.682.07 4.962.058 1.328.3 2.538 1.365 3.603 1.065 1.065 2.275 1.307 3.603 1.365 1.28.058 1.683.07 4.962.07s3.682-.012 4.962-.07c1.328-.058 2.538-.3 3.603-1.365 1.065-1.065 1.307-2.275 1.365-3.603.058-1.28.07-1.683.07-4.962s-.012-3.682-.07-4.962c-.058-1.328-.3-2.538-1.365-3.603C19.485.37 18.275.128 16.948.07 15.668.012 15.265 0 12 0zm0 5.8a6.2 6.2 0 1 0 0 12.4A6.2 6.2 0 0 0 12 5.8zm0 10.2a4 4 0 1 1 0-8.001 4 4 0 0 1 0 8zm6.4-11.2a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z"
+                />
+              </svg>
             </a>
-          </div>          
+          </div>
         </div>
-    
       </div>
-    
+
       <!-- Línea inferior -->
       <div class="footer-bottom">
         <p>
-          © 2023 Collares Artesanales Online. Todos los derechos reservados. 
-          <a href="#">Política de Privacidad</a> | 
-          <a href="#">Términos y Condiciones</a> | 
-          <a href="#">Política de Cookies</a> | 
+          © 2023 Collares Artesanales Online. Todos los derechos reservados.
+          <a href="#">Política de Privacidad</a> |
+          <a href="#">Términos y Condiciones</a> |
+          <a href="#">Política de Cookies</a> |
           <a href="#">Envíos y Devoluciones</a>
         </p>
         <div class="payment-icons">
-          <svg xmlns="http://www.w3.org/2000/svg" width="34" height="24" viewBox="0 0 48 32" fill="#555"><path d="M0 5c0-2.8 2.2-5 5-5h38c2.8 0 5 2.2 5 5v22c0 2.8-2.2 5-5 5H5c-2.8 0-5-2.2-5-5V5zm4 0v2h40V5c0-0.6-0.4-1-1-1H5c-0.6 0-1 0.4-1 1zm0 22c0 0.6 0.4 1 1 1h38c0.6 0 1-0.4 1-1V13H4v14zm10-6h2v2h-2v-2zm4 0h6v2h-6v-2zm8 0h2v2h-2v-2z"/></svg>
-          <svg xmlns="http://www.w3.org/2000/svg" width="34" height="24" viewBox="0 0 48 32" fill="#555"><path d="M1 6c0-2.8 2.2-5 5-5h36c2.8 0 5 2.2 5 5v20c0 2.8-2.2 5-5 5H6c-2.8 0-5-2.2-5-5V6zm7.3 9.8h2.4l-0.4 2h-2.4l0.4-2zm5.2 0h3.8v2h-3.8v-2zm6.5 0h2.8l0.4 2h-2.8l-0.4-2zm6.4 0h2.5v2h-2.5v-2zm6.1 0h3.2v2h-3.2v-2z"/></svg>
-          <svg xmlns="http://www.w3.org/2000/svg" width="34" height="24" viewBox="0 0 48 32" fill="#555"><path d="M6 0C2.7 0 0 2.7 0 6v20c0 3.3 2.7 6 6 6h36c3.3 0 6-2.7 6-6V6c0-3.3-2.7-6-6-6H6zm15.7 10.3h8c2.2 0 3.8 1.5 3.8 3.6 0 1.2-0.7 2.3-1.7 2.9 1.5 0.4 2.5 1.7 2.5 3.4 0 2.2-1.6 3.8-3.9 3.8h-8.7V10.3zm3 2.6v2.2h3.6c0.7 0 1.3-0.6 1.3-1.3s-0.6-1.3-1.3-1.3h-3.6zm0 4.9v2.4h4c0.8 0 1.5-0.7 1.5-1.5s-0.7-0.9-1.5-0.9h-4z"/></svg>
-        </div>        
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="34"
+            height="24"
+            viewBox="0 0 48 32"
+            fill="#555"
+          >
+            <path
+              d="M0 5c0-2.8 2.2-5 5-5h38c2.8 0 5 2.2 5 5v22c0 2.8-2.2 5-5 5H5c-2.8 0-5-2.2-5-5V5zm4 0v2h40V5c0-0.6-0.4-1-1-1H5c-0.6 0-1 0.4-1 1zm0 22c0 0.6 0.4 1 1 1h38c0.6 0 1-0.4 1-1V13H4v14zm10-6h2v2h-2v-2zm4 0h6v2h-6v-2zm8 0h2v2h-2v-2z"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="34"
+            height="24"
+            viewBox="0 0 48 32"
+            fill="#555"
+          >
+            <path
+              d="M1 6c0-2.8 2.2-5 5-5h36c2.8 0 5 2.2 5 5v20c0 2.8-2.2 5-5 5H6c-2.8 0-5-2.2-5-5V6zm7.3 9.8h2.4l-0.4 2h-2.4l0.4-2zm5.2 0h3.8v2h-3.8v-2zm6.5 0h2.8l0.4 2h-2.8l-0.4-2zm6.4 0h2.5v2h-2.5v-2zm6.1 0h3.2v2h-3.2v-2z"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="34"
+            height="24"
+            viewBox="0 0 48 32"
+            fill="#555"
+          >
+            <path
+              d="M6 0C2.7 0 0 2.7 0 6v20c0 3.3 2.7 6 6 6h36c3.3 0 6-2.7 6-6V6c0-3.3-2.7-6-6-6H6zm15.7 10.3h8c2.2 0 3.8 1.5 3.8 3.6 0 1.2-0.7 2.3-1.7 2.9 1.5 0.4 2.5 1.7 2.5 3.4 0 2.2-1.6 3.8-3.9 3.8h-8.7V10.3zm3 2.6v2.2h3.6c0.7 0 1.3-0.6 1.3-1.3s-0.6-1.3-1.3-1.3h-3.6zm0 4.9v2.4h4c0.8 0 1.5-0.7 1.5-1.5s-0.7-0.9-1.5-0.9h-4z"
+            />
+          </svg>
+        </div>
       </div>
     </footer>
-    
+
     <script src="index.js"></script>
   </body>
 </html>
