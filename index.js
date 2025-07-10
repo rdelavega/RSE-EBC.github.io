@@ -58,8 +58,8 @@ animatedElements.forEach((el) => {
 // ===========================
 // Búsqueda con resultados fake (desde search bar)
 // ===========================
-const searchForm = document.querySelector(".search-bar .form");
-const input = searchForm?.querySelector(".input");
+const searchForm = document.querySelector("form");
+const input = searchForm?.querySelector("input[type='text");
 
 searchForm?.addEventListener("submit", (e) => {
   e.preventDefault();
