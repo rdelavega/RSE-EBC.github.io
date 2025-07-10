@@ -33,7 +33,7 @@
 /* Cada tarjeta de resultado */
 .result-card {
   background: linear-gradient(135deg, #6c92af 0%, #5a7a94 100%);
-  background-image: url("/public/Collar_detalles-2.png");
+  background-image: url("public/Collar_detalles-2.png");
   color: white;
   padding: 2rem 1.5rem;
   border-radius: 20px;
