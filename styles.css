@@ -744,6 +744,154 @@ button {
   cursor: pointer;
 }
 
+/* ======= Testimonios ========= */
+
+.container {
+  max-width: 750px;
+  margin: auto;
+  margin-top: 5em;
+  margin-bottom: 5em;
+  position: relative;
+  background: #D96C4D;
+  border-radius: 50px;
+  text-align: center;
+  overflow: hidden;
+  padding-bottom: 50px;
+}
+
+.container h2{
+  margin: 10;
+  padding-top: 10px;
+  font-size: 30px;
+  font-weight: 100;
+  color: #dad3c3;
+}
+.container hr{
+  width: 50%;
+  height: 4px;
+  border: none;
+  background-color: #dad3c3;
+  margin-top: 10px;
+  margin-left: auto;
+}
+
+/*nuevo*/
+.container input{
+  display: none; 
+}
+
+.container .slides{
+  width: 400%;
+  padding-left: 0;
+  list-style: none;
+  position: relative;
+  transition: all .8s cubic-bezier(1, 0, 0, 1);
+  display: flex;
+}
+
+
+.slides li{
+  width: 25%;
+  position: relative;
+  float: left;
+}
+
+.container li p{
+  margin-top: 0;
+}
+
+.container li q{
+  max-width: 90%;
+  margin: auto;
+  color:#dad3c3;
+  font-size: 20px;
+  font-weight: bold;
+
+}
+
+.container li img{
+  width: 60px;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 10px;
+
+}
+
+.container li span.author{
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 100;
+  color: #dad3c3;
+  display: block;
+  
+}
+
+.navigation{
+  display: flex;
+  justify-content: center;
+  gap:10 px;
+  position: absolute;
+  bottom: 10px;
+  left:50%;
+  transform: translateX(-50%);
+
+}
+
+
+.navigation label{
+  width: 15px;
+  height: 15px;
+  margin: 0 6px;
+  display: block;
+  background-color: #dad3c3;
+  border-radius: 50%;
+  border: 2px solid #333;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+}
+
+#radio1:checked ~ .slides{
+  transform: translateX(0%);
+}
+
+#radio2:checked ~ .slides{
+  transform: translateX(-25%);
+}
+
+#radio3:checked ~ .slides{
+  transform: translateX(-50%);
+}
+
+#radio1:checked ~ .navigation label#radioselect1,
+#radio2:checked ~ .navigation label#radioselect2,
+#radio3:checked ~ .navigation label#radioselect3 {
+  background: #333;
+  border-color:#dad3c3;
+}
+
+@media screen and (max-widht:488px) {
+  .container li p{
+      padding-left: 0.5em;
+      padding-right: 0.5em;
+  }
+
+  .container li q{
+      font-size: 1em;
+  }
+  
+  .container li img{
+      width: 2em;
+      margin-left: -1em;
+      margin-right: 0.25em;
+  }
+
+  .container h2{
+      font-size: 20px;
+  }
+}
+
+
 /* ============================================
    Footer
    ============================================ */

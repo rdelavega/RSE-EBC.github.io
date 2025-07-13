@@ -192,7 +192,7 @@
           precios especiales
         </p>
         <form class="contact-form">
-          <input type="text" placeholder="Nombre completo *" required />
+          <input type="text" id="nombre" placeholder="Nombre completo *" required />
           <input type="email" placeholder="Correo electrónico *" required />
           <input type="tel" placeholder="Teléfono (opcional)" />
           <textarea
@@ -205,6 +205,56 @@
           </button>
         </form>
       </section>
+
+      <!-- =========== Testimonios ========= -->
+
+      <hr>
+      <div class="container">
+
+        <h2>Opiniones de nuestros <b>Seguidores</b></h2>
+        <hr>
+        <input type="radio" name="slides" id="radio1" checked>
+        <input type="radio" name="slides" id="radio2">
+        <input type="radio" name="slides" id="radio3">
+        <ul class="slides">
+          <li class="slide">
+            <p>
+              <q> Lorem ipsum dolor sit, amet.</q>
+              <span class="author">
+                <img src="public/persona1.png" alt="testimonio1">
+                Andrea Palacios 
+              </span>
+            </p>
+          </li>
+
+          <li class="slide">
+            <p>
+              <q> Lorem ipsum dolor sit, amet.</q>
+              <span class="author">
+                <img src="public/persona2.png" alt="testimonio2" w>
+                Paola N. 
+              </span>
+            </p>
+          </li>
+
+          <li class="slide">
+            <p>
+              <q> Lorem ipsum dolor sit, amet.</q>
+              <span class="author">
+                <img src="public/persona3.png" alt="testimonio3">
+                Omar González  
+              </span>
+            </p>
+          </li>
+        </ul>  
+        <div class="navigation">
+          <label for="radio1" id="radioselect1"></label>
+          <label for="radio2" id="radioselect2"></label>
+          <label for="radio3" id="radioselect3"></label>
+        </div>    
+
+      </div>
+
     </main>
 
     <!-- ========== FOOTER ========== -->
