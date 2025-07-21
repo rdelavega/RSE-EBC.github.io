@@ -55,6 +55,31 @@ animatedElements.forEach((el) => {
   observer.observe(el);
 });
 
+// Validacion de nombre y mensaje de éxito
+
+document
+  .querySelector(".contact-form")
+  .addEventListener("submit", function (e) {
+    const contactName = document.getElementById("nombre");
+
+    const name = contactName.value.trim();
+    const partes = name.split(/\s+/);
+    const regex = /^[A-Za-zÁÉÍÓÚÑáéíóúñ]{2,}$/;
+    const isValid =
+      partes.length >= 2 && partes.every((parte) => regex.test(parte));
+
+    if (!isValid) {
+      e.preventDefault();
+      alert("Por favor ingresa tu nombre completo (nombre y apellido).");
+      name.focus();
+      return;
+    }
+
+    alert(
+      "Sus datos han sido enviados con éxito, en unos momentos nos contactaremos con usted. Gracias!"
+    );
+  });
+
 // ===========================
 // Búsqueda con resultados fake (desde search bar)
 // ===========================
