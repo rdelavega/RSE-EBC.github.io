@@ -9,6 +9,12 @@
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link href="styles.css" rel="stylesheet" />
     <title>Página del Equipo</title>
     <link
@@ -84,7 +90,7 @@
     </nav>
 
     <main class="page">
-      <!-- ========== HERO SECTION ========== -->
+      <!-- Hero Section -->
       <section class="hero">
         <div class="hero-overlay">
           <div class="hero-content">
@@ -92,135 +98,171 @@
             <p class="hero-subtitle">
               Descubre el toque artesanal que tu mascota merece...
             </p>
-            <button class="btn-primary">Descubre nuestros collares</button>
+            <button class="btn-primary-custom">
+              Descubre nuestros collares
+            </button>
           </div>
         </div>
       </section>
 
-      <!-- ========== FEATURES ========== -->
-      <hr class="linea-naranja-uno" />
+      <!-- Features Section -->
+      <hr class="linea-naranja linea-naranja-uno" />
       <section class="features">
-        <h2 class="section-title" id="feature-title">
-          Conoce nuestra colección
-        </h2>
-        <div class="features-grid">
-          <article class="card">
-            <img
-              src="public/Decorativos.png"
-              alt="Decorativos"
-              class="card-img-uno"
-            />
-            <h3 class="card-title">Decorativos</h3>
-            <p class="card-text">
-              Cada collar es una pieza única, tejida a mano con patrones
-              tradicionales que reflejan la rica cultura artesanal mexicana.
-            </p>
-          </article>
-          <article class="card">
-            <img
-              src="public/Cuero.png"
-              alt="Collares de Cuero"
-              class="card-img-dos"
-            />
-            <h3 class="card-title">Collares de Cuero</h3>
-            <p class="card-text">
-              Utilizamos materiales de la más alta calidad, resistentes al agua
-              y al desgaste, garantizando durabilidad y comodidad.
-            </p>
-          </article>
-          <article class="card">
-            <img
-              src="public/Personalizados.png"
-              alt="Personalización"
-              class="card-img-tres"
-            />
-            <h3 class="card-title">Personalización</h3>
-            <p class="card-text">
-              Adaptamos cada collar al tamaño y personalidad de tu mascota.
-              Colores, tallas y diseños completamente personalizables.
-            </p>
-          </article>
+        <div class="container-fluid">
+          <h2 class="section-title">Conoce nuestra colección</h2>
+          <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+              <article class="card-custom">
+                <img
+                  src="public/Personalizados.png"
+                  alt="Decorativos"
+                  class="card-img card-img-uno"
+                />
+                <h3 class="card-title">Decorativos</h3>
+                <p class="card-text">
+                  Cada collar es una pieza única, tejida a mano con patrones
+                  tradicionales que reflejan la rica cultura artesanal mexicana.
+                </p>
+              </article>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <article class="card-custom">
+                <img
+                  src="public/Cuero.png"
+                  alt="Collares de Cuero"
+                  class="card-img card-img-dos"
+                />
+                <h3 class="card-title">Collares de Cuero</h3>
+                <p class="card-text">
+                  Utilizamos materiales de la más alta calidad, resistentes al
+                  agua y al desgaste, garantizando durabilidad y comodidad.
+                </p>
+              </article>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <article class="card-custom">
+                <img
+                  src="public/diseño.png"
+                  alt="Personalización"
+                  class="card-img card-img-tres"
+                />
+                <h3 class="card-title">Personalización</h3>
+                <p class="card-text">
+                  Adaptamos cada collar al tamaño y personalidad de tu mascota.
+                  Colores, tallas y diseños completamente personalizables.
+                </p>
+              </article>
+            </div>
+          </div>
         </div>
       </section>
 
-      <!-- ========== ABOUT ========== -->
-      <hr class="linea-naranja-dos" />
+      <!-- About Section -->
+      <hr class="linea-naranja linea-naranja-dos" />
       <section class="about">
-        <h2 class="section-title" id="about-title">
-          Más que un collar, una obra de arte que cuenta una historia.
-        </h2>
-        <div class="about-reasons">
-          <div class="reason-card">
-            <img
-              src="public/materiales.png"
-              alt="Materiales"
-              class="card-img-cuatro"
-            />
-            <h3 class="reason-title">Materiales y durabilidad</h3>
-            <p>
-              Seleccionamos cuidadosamente hilos de algodón premium y accesorios
-              de metal inoxidable que garantizan resistencia y durabilidad en
-              cada collar tejido a mano. Cada pieza pasa por rigurosos controles
-              de calidad.
-            </p>
-          </div>
-          <div class="reason-card">
-            <img
-              src="public/comodidad.png"
-              alt="Comodidad"
-              class="card-img-cinco"
-            />
-            <h3 class="reason-title">Comodidad para tu mascota</h3>
-            <p>
-              Diseñados ergonómicamente pensando en la comodidad y bienestar de
-              tu mejor amigo. Bordes suaves, peso equilibrado y ajuste perfecto
-              para que tu mascota se sienta cómoda todo el día.
-            </p>
-          </div>
-          <div class="reason-card">
-            <img src="public/diseño.png" alt="Diseño" class="card-img-seis" />
-            <h3 class="reason-title">Diseño auténtico</h3>
-            <p>
-              Cada pieza refleja tradición ancestral, cultura viva y estilo
-              único. Patrones inspirados en textiles tradicionales mexicanos que
-              hacen de cada collar una obra de arte portable.
-            </p>
+        <div class="container-fluid">
+          <h2 class="section-title">
+            Más que un collar, una obra de arte que cuenta una historia.
+          </h2>
+          <div class="row g-4 mt-3">
+            <div class="col-lg-4 col-md-6">
+              <div class="reason-card">
+                <img
+                  src="public/materiales.png"
+                  alt="Materiales"
+                  class="card-img-about"
+                />
+                <h3 class="reason-title">Materiales y durabilidad</h3>
+                <p>
+                  Seleccionamos cuidadosamente hilos de algodón premium y
+                  accesorios de metal inoxidable que garantizan resistencia y
+                  durabilidad en cada collar tejido a mano. Cada pieza pasa por
+                  rigurosos controles de calidad.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="reason-card">
+                <img
+                  src="public/comodidad.png"
+                  alt="Comodidad"
+                  class="card-img-about"
+                />
+                <h3 class="reason-title">Comodidad para tu mascota</h3>
+                <p>
+                  Diseñados ergonómicamente pensando en la comodidad y bienestar
+                  de tu mejor amigo. Bordes suaves, peso equilibrado y ajuste
+                  perfecto para que tu mascota se sienta cómoda todo el día.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="reason-card">
+                <img
+                  src="public/Decorativos.png"
+                  alt="Diseño"
+                  class="card-img-about card-img-seis"
+                />
+                <h3 class="reason-title">Diseño auténtico</h3>
+                <p>
+                  Cada pieza refleja tradición ancestral, cultura viva y estilo
+                  único. Patrones inspirados en textiles tradicionales mexicanos
+                  que hacen de cada collar una obra de arte portable.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- ========== CATALOGUE / CONTACT FORM ========== -->
-      <hr class="linea-naranja-tres" />
+      <!-- Contact Section -->
+      <hr class="linea-naranja linea-naranja-tres" />
       <section class="contact">
-        <h2 class="section-title-contact">Consulta el Catálogo</h2>
-        <p class="contact-tagline">
-          Déjanos tus datos y te enviaremos nuestro catálogo completo con
-          precios especiales
-        </p>
-        <form class="contact-form">
-          <input
-            type="text"
-            id="nombre"
-            placeholder="Nombre completo *"
-            required
-          />
-          <input type="email" placeholder="Correo electrónico *" required />
-          <input type="tel" placeholder="Teléfono (opcional)" />
-          <textarea
-            placeholder="Cuéntanos sobre tu mascota: raza, tamaño, colores favoritos..."
-            rows="4"
-            required
-          ></textarea>
-          <button type="submit" class="btn-primary-contact">
-            Enviar solicitud
-          </button>
-        </form>
+        <div class="container-fluid">
+          <h2 class="section-title-contact">Consulta el Catálogo</h2>
+          <p class="contact-tagline">
+            Déjanos tus datos y te enviaremos nuestro catálogo completo con
+            precios especiales
+          </p>
+          <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-8">
+              <form class="contact-form">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nombre"
+                  placeholder="Nombre completo *"
+                  required
+                />
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Correo electrónico *"
+                  required
+                />
+                <input
+                  type="tel"
+                  class="form-control"
+                  placeholder="Teléfono (opcional)"
+                />
+                <textarea
+                  class="form-control"
+                  rows="4"
+                  placeholder="Cuéntanos sobre tu mascota: raza, tamaño, colores favoritos..."
+                  required
+                ></textarea>
+                <button type="submit" class="btn btn-primary-contact w-100">
+                  Enviar solicitud
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <!-- =========== Testimonios ========= -->
-
-      <div class="container">
-        <h2>Opiniones de nuestros <b>Seguidores</b></h2>
+      <!-- Testimonials Section -->
+      <div class="testimonials-container">
+        <h2>Opiniones de nuestros seguidores:</h2>
         <hr />
         <input type="radio" name="slides" id="radio1" checked />
         <input type="radio" name="slides" id="radio2" />
@@ -230,38 +272,36 @@
             <p>
               <q>
                 Increíbles Collares. Los collares son inigualables, mi perrito
-                luce su collar con orgullo
+                luce su collar con orgullo.
               </q>
               <span class="author">
                 <img src="public/persona1.png" alt="testimonio1" />
-                Andrea Palacios
+                - Andrea Palacios
               </span>
             </p>
           </li>
-
           <li class="slide">
             <p>
               <q>
-                Desde que descubri los collares artesanales de esta tienda, mi
+                Desde que descubrí los collares artesanales de esta tienda, mi
                 perro luce encantador y único. La calidad y el diseño son
-                simplemente insuperables</q
-              >
+                simplemente insuperables.
+              </q>
               <span class="author">
                 <img src="public/persona2.png" alt="testimonio2" />
-                Paola N.
+                - Paola N.
               </span>
             </p>
           </li>
-
           <li class="slide">
             <p>
               <q>
                 Son resistentes y atractivos, perfectos para cualquier mascota.
-                La atencion es de 10!</q
-              >
+                La atención es de 10!
+              </q>
               <span class="author">
                 <img src="public/persona3.png" alt="testimonio3" />
-                Omar González
+                - Omar González
               </span>
             </p>
           </li>
