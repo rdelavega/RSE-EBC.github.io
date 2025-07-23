@@ -43,16 +43,42 @@ body {
    Header / Navbar
    ============================================ */
 
+
 .navbar {
   background-color: #d96c4d;
   color: rgb(245, 241, 234);
+  /* QUITAR padding para no afectar el ancho total */
+  padding: 10px 0; /* solo un poco de padding vertical si quieres */
+  /* Mantener flex para que no se pierda alineación vertical */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Para centrar el container interno */
+  position: relative;
+}
+
+.container-navbar {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 10px 20px;
-  position: relative;
 }
+
+@media (min-width: 992px) {
+  .navbar-nav {
+    gap: 20px;
+  }
+
+  .navbar .mx-auto {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
 
 .logo img {
   height: 80px;
@@ -131,6 +157,8 @@ body {
   padding-block: 0.7em;
   border: none;
 }
+
+
 
 .form:before {
   content: "";
