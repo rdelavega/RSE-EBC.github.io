@@ -951,19 +951,28 @@ footer {
   margin-bottom: 10px;
 }
 
-.social-icons svg,
-.payment-icons svg {
-  width: 24px;
-  height: 24px;
-  margin-right: 12px;
-  fill: #d96c4d;
-  transition: transform 0.2s ease;
+.btn-outline-primary {
+  border-color: #D96C4D;
+  color: #D96C4D;
+  font-weight: 600;
+  transition: all 0.3s ease;
 }
 
-.social-icons svg:hover,
-.payment-icons svg:hover {
-  transform: scale(1.1);
-  fill: #d96c4d;
+.btn-outline-primary:hover {
+  background-color: #D96C4D;
+  color: #fff;
+  box-shadow: 0 4px 15px rgba(217, 108, 77, 0.3);
+  border: 1px solid var(--secondary-orange);
+}
+
+.social-icons a i {
+  transition: transform 0.2s ease, color 0.2s ease;
+  font-size: 1.3rem;
+}
+
+.social-icons a:hover i {
+  transform: scale(1.15);
+  color: #a94425; 
 }
 
 /* Responsive */
