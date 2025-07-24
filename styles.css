@@ -956,14 +956,14 @@ footer {
   width: 24px;
   height: 24px;
   margin-right: 12px;
-  fill: #d96c4d;
+  fill: #D96C4D;
   transition: transform 0.2s ease;
 }
 
 .social-icons svg:hover,
 .payment-icons svg:hover {
   transform: scale(1.1);
-  fill: #d96c4d;
+  fill: #D96C4D;
 }
 
 /* Responsive */
@@ -987,3 +987,4 @@ footer {
     text-align: center;
   }
 }
+
