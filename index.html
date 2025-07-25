@@ -23,71 +23,65 @@
     />
   </head>
   <body>
+
     <!-- ========== NAVBAR ========== -->
 
-    <nav class="navbar">
-      <div class="logo">
-        <img src="public/logo.png" alt="Logo nomadogs" />
+    <nav class="navbar navbar-expand-lg py-2" style="background-color:#D96C4D;">
+      <div class="container-navbar"> <!--1 correcion-->
+
+    <!-- Logo -->
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="public/logo.png" alt="Logo nomadogs" height="30" />
+        </a>
+
+        <!-- Botón hamburguesa Bootstrap -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Contenido colapsable -->
+        <div class="collapse navbar-collapse justify-content-between align align-items-center" id="navbarNav">
+          <!--Enlaces-->
+          <div class="mx-auto order-2 d-flex justify-content-center w-100">
+            <ul class="navbar-nav d-flex justify-content-center">
+              <li class="nav-item"><a class="nav-link active link-dark" style="color:#DAD3C3;" href="#">Inicio</a></li>
+              <li class="nav-item"><a class="nav-link" style="color:#DAD3C3;" href="https://www.youtube.com/watch?v=K1k35lDpzdw&list=RDK1k35lDpzdw&start_radio=1">Servicios</a></li>
+              <li class="nav-item"><a class="nav-link" style="color:#DAD3C3;" href="#">Nosotros</a></li>
+              <li class="nav-item"><a class="nav-link" style="color:#DAD3C3;" href="#">Contacto</a></li>
+            </ul>
+          </div>
+
+          <!-- Barra de búsqueda -->
+          <div class="order-3 ms-auto">
+            <form class="d-flex search-bar" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar..."
+                aria-label="Buscar"
+                
+
+              />
+              <button class="btn btn-outline-light me-2" type="submit">
+                <svg width="17" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="search">
+                  <path
+                    d="M7.667 12.667A5.333 5.333 0 107.667 2a5.333 5.333 0 000 10.667zM14.334 14l-2.9-2.9"
+                    stroke="currentColor"
+                    stroke-width="1.333"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+              </button>
+            </form>
+          
+          </div>
+
+        </div>
       </div>
+</nav>
 
-      <!-- Toggle para menú móvil -->
-      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
-      <label for="menu-toggle" class="menu-icon">&#9776;</label>
-
-      <!-- Enlaces -->
-      <ul class="nav-links">
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Servicios</a></li>
-        <li><a href="#">Nosotros</a></li>
-        <li><a href="#">Contacto</a></li>
-      </ul>
-
-      <!-- Barra de búsqueda -->
-      <div class="search-bar">
-        <form class="form">
-          <button>
-            <svg
-              width="17"
-              height="16"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              role="img"
-              aria-labelledby="search"
-            >
-              <path
-                d="M7.667 12.667A5.333 5.333 0 107.667 2a5.333 5.333 0 000 10.667zM14.334 14l-2.9-2.9"
-                stroke="currentColor"
-                stroke-width="1.333"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></path>
-            </svg>
-          </button>
-          <input
-            class="input"
-            placeholder="Busca un producto"
-            required=""
-            type="text"
-          />
-          <button class="reset" type="reset">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              stroke-width="2"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M6 18L18 6M6 6l12 12"
-              ></path>
-            </svg>
-          </button>
-        </form>
-      </div>
-    </nav>
 
     <main class="page">
       <!-- Hero Section -->
