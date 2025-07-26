@@ -128,7 +128,7 @@ body {
   color: #d96c4d;
 }
 
-.form {
+form {
   --timing: 0.3s;
   --width-of-input: 350px;
   --height-of-input: 30px;
@@ -148,7 +148,7 @@ body {
   background: var(--input-bg, #f5f1ea);
 }
 
-.input {
+input {
   font-size: 1.1rem;
   background-color: #f5f1ea;
   width: 100%;
